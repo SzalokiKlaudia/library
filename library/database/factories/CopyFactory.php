@@ -17,7 +17,9 @@ class CopyFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'author' => fake('hu_HU')->name(),
+            'title' => fake()->sentence(),
+            'pieces' => rand(20,201)
         ];
     }
 }
